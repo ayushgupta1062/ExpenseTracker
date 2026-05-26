@@ -1,86 +1,145 @@
-# Ultimate Enterprise Prompt — Smart Expense Tracker SaaS
+# Ultimate Enterprise Prompt — Smart Expense Tracker SaaS Platform
 
-You are a Principal Full Stack Engineer, Java Architect, DevOps Engineer, Security Engineer, Database Architect, and Senior UI/UX Designer.
+You are a Principal Full Stack Engineer, Senior Java Architect, Database Engineer, DevOps Engineer, Security Engineer, and Premium UI/UX Designer responsible for building a production-grade fintech SaaS application.
 
-Build a COMPLETE production-ready Smart Expense Tracker SaaS web application with enterprise-grade architecture, scalable codebase, premium fintech UI/UX, secure authentication, analytics dashboard, Dockerized deployment, reusable components, and professional documentation.
+Develop a COMPLETE Smart Expense Tracker platform with enterprise-level architecture, scalable backend systems, premium frontend experience, secure authentication, financial analytics dashboards, Dockerized deployment, and professional documentation.
 
-The final application must feel like a real-world fintech startup product built by a senior engineering team.
+The final application should feel like a real-world fintech startup product engineered by an experienced software team with strong emphasis on scalability, maintainability, security, clean architecture, and production readiness.
+
+---
+
+# Context and Role
+
+As a Senior Full Stack Java Engineer and Software Architect, you are responsible for designing and implementing a modern financial management platform capable of handling real-world production workloads.
+
+The platform must:
+- Deliver a premium SaaS-style fintech experience
+- Follow enterprise engineering standards
+- Maintain clean and scalable architecture
+- Support secure and optimized API communication
+- Ensure responsive and accessible UI/UX
+- Be deployment-ready using Docker infrastructure
+- Use modular and reusable development practices
+
+The implementation must avoid mock structures, placeholder logic, incomplete files, and pseudo-code.
 
 ---
 
 # Objective
 
-Develop a modern Smart Expense Tracker platform where users can:
+Build a fully functional Smart Expense Tracker web application where users can:
 
-- Register and login securely
-- Manage income and expenses
-- Create and manage categories
-- Track balances and spending insights
-- View analytics dashboards and charts
-- Use the application seamlessly across desktop, tablet, and mobile devices
+- Register and authenticate securely
+- Manage expenses, income, and custom categories
+- Monitor financial summaries and monthly balances
+- Analyze spending behavior through interactive dashboards
+- Access the platform seamlessly across desktop, tablet, and mobile devices
 
-The project must be:
-- Production-ready
-- Fully functional
-- Scalable
-- Secure
-- Maintainable
-- Beginner-friendly but industry-level
+The system should prioritize:
+- Scalability
+- Security
+- Maintainability
+- Performance optimization
+- Reusable architecture
+- Clean code standards
+- Responsive design
+- Production deployment readiness
 
 ---
 
-# Tech Stack
+# Technology Stack
 
-## Frontend
-
-Use:
-- React JS + Vite
-- Tailwind CSS
-- Axios
-- React Router DOM
-- Context API or Redux Toolkit
-- React Hook Form
-- Zod or Yup Validation
-- Framer Motion
-- Recharts or Chart.js
-- React Toastify
-
-## Backend
+## Frontend Technologies
 
 Use:
-- Java Spring Boot
-- Spring MVC
-- Spring Security
-- JWT Authentication
-- Hibernate / JPA
-- Maven
-- Lombok
-- Bean Validation
-- REST APIs
-- DTO Pattern
-- Global Exception Handling
+- React JS + Vite → Fast modern frontend tooling and optimized builds
+- Tailwind CSS → Utility-first responsive UI styling
+- Axios → Centralized API communication
+- React Router DOM → Client-side routing and protected navigation
+- React Hook Form → Optimized and scalable form management
+- Zod or Yup → Secure schema-based validation
+- Context API or Redux Toolkit → Global state management
+- Framer Motion → Smooth UI animations and transitions
+- Recharts or Chart.js → Financial analytics visualizations
+- React Toastify → User notifications and feedback handling
+
+Frontend architecture must support:
+- Modular feature-based structure
+- Reusable components
+- Centralized API handling
+- Lazy loading
+- Route-based code splitting
+- Optimized rendering
+
+---
+
+## Backend Technologies
+
+Use:
+- Java Spring Boot → Enterprise backend framework
+- Spring MVC → Structured layered architecture
+- Spring Security → Secure authentication and authorization
+- JWT Authentication → Stateless secure session handling
+- Hibernate / JPA → ORM and relational data management
+- Maven → Dependency and build management
+- Lombok → Boilerplate reduction
+- Bean Validation → Request and DTO validation
+- REST APIs → Standardized API communication
+- DTO Pattern → Secure data transfer structure
+- Global Exception Handling → Centralized error management
+
+Backend architecture must support:
+- Layered enterprise architecture
+- Secure API development
+- Scalable service structure
+- Reusable business logic
+- Proper separation of concerns
+
+---
 
 ## Database
 
-- MySQL
+Use:
+- MySQL → Relational database for transactional financial data
+
+Database design should include:
+- Proper relationships
+- Foreign keys
+- Indexing strategies
+- Optimized queries
+- Constraints
+- Timestamp auditing
+- Normalized schema structure
+
+Relationships:
+- One User → Many Expenses
+- One User → Many Incomes
+- One User → Many Categories
+
+---
 
 ## DevOps & Deployment
 
 Use:
-- Docker
-- Docker Compose
-- Nginx
-- Environment Variables
-- Multi-stage Docker Builds
+- Docker → Containerized application deployment
+- Docker Compose → Multi-service orchestration
+- Nginx → Reverse proxy and frontend serving
+- Environment Variables → Secure runtime configuration
+- Multi-stage Docker Builds → Optimized production images
 
-Deployment Targets:
+Deployment targets:
 - Frontend → Vercel / Netlify
 - Backend → Render / Railway
 - Database → Railway MySQL / PlanetScale
 
+The system must run successfully using:
+```bash
+docker-compose up --build
+```
+
 ---
 
-# Core Features
+# Functional Requirements
 
 ## Authentication & Security
 
@@ -88,56 +147,68 @@ Implement:
 - JWT Authentication
 - BCrypt Password Encryption
 - Protected Routes
-- Persistent Sessions
+- Persistent Login Sessions
 - Secure Logout
 - Route Guards
-- Input Validation
-- Global Error Handling
+- Token Validation
+- Secure API Access
 - CORS Configuration
-- SQL Injection & XSS Protection
+- Input Sanitization
+- SQL Injection Protection
+- XSS Protection
+- Global Error Handling
 
-Features:
+Authentication Features:
 - Signup
 - Login
 - Logout
 - Session Persistence
 
-Role:
-- USER only
+Role System:
+- USER role only
 
 ---
 
 # Dashboard Features
 
-Include:
-- Total Income Card
-- Total Expense Card
-- Remaining Balance Card
-- Monthly Summary
+The dashboard must include:
+- Total Income Overview
+- Total Expense Overview
+- Remaining Balance Summary
+- Monthly Financial Snapshot
 - Recent Transactions
-- Activity Feed
+- Recent Activity Feed
 - Quick Add Actions
 
-Analytics:
-- Monthly Expense Chart
-- Income vs Expense Graph
+Analytics & Visualization:
+- Monthly Expense Analytics
+- Income vs Expense Comparison
 - Expense Category Pie Chart
+
+Charts should support:
+- Responsive rendering
+- Dynamic updates
+- Optimized performance
+- Interactive visualization
 
 ---
 
 # Expense Management
 
-Implement full CRUD operations.
+Implement complete CRUD functionality.
 
 Features:
-- Add/Edit/Delete Expense
+- Add Expense
+- Edit Expense
+- Delete Expense
+- Expense History
 - Search Expenses
 - Filter by Category
 - Sort by Date
 - Pagination
 - Responsive Table & Card Views
 
-Fields:
+Expense Fields:
 - Title
 - Amount
 - Category
@@ -148,18 +219,20 @@ Fields:
 
 # Income Management
 
-Implement full CRUD operations.
+Implement complete CRUD functionality.
 
-Fields:
+Features:
+- Add Income
+- Edit Income
+- Delete Income
+- Income History
+- Search & Filter Support
+
+Income Fields:
 - Source
 - Amount
 - Date
 - Description
-
-Features:
-- Add/Edit/Delete Income
-- Income History
-- Search & Filter
 
 ---
 
@@ -167,7 +240,7 @@ Features:
 
 Allow users to:
 - Create Categories
-- Edit Categories
+- Update Categories
 - Delete Categories
 
 Default Categories:
@@ -180,20 +253,21 @@ Default Categories:
 
 ---
 
-# Frontend Requirements
+# Frontend Engineering Requirements
 
-Use:
+Build the frontend using:
 - Functional Components
 - React Hooks
 - Reusable Components
+- Modular Architecture
 - Lazy Loading
 - Route-based Code Splitting
-- Responsive Layouts
 - Centralized API Layer
+- Responsive Layouts
 - Custom Hooks
-- Modular Feature-Based Architecture
+- Optimized State Updates
 
-Pages:
+Required Pages:
 - Login
 - Signup
 - Dashboard
@@ -211,92 +285,102 @@ Pages:
 
 Design Style:
 - Premium Fintech SaaS UI
-- Glassmorphism
-- Modern Minimal Design
-- Smooth Animations
+- Modern Minimal Interface
+- Glassmorphism Effects
 - Elegant Gradients
 - Soft Shadows
+- Smooth Animations
 - Responsive Mobile-First Layouts
 
-Components:
+UI Components:
 - Sidebar Navigation
 - Navbar
-- Glass Cards
-- Charts
+- Dashboard Cards
+- Analytics Charts
 - Reusable Tables
 - Reusable Forms
-- Modals
+- Modals & Dialogs
 - Skeleton Loaders
-- Toast Notifications
 - Empty States
-- Confirmation Dialogs
+- Toast Notifications
 
-UX:
+User Experience Requirements:
 - Smooth transitions
-- Fast loading
+- Optimized loading experience
 - Accessibility support
 - Responsive interactions
+- Clear validation feedback
+- Professional visual hierarchy
 
 ---
 
-# Backend Architecture
+# Backend Architecture Requirements
 
-Follow enterprise layered architecture:
+Follow enterprise-grade layered architecture.
 
-- Controller Layer
-- Service Layer
-- Repository Layer
-- DTO Layer
-- Entity Layer
-- Mapper Layer
-- Validation Layer
-- Security Layer
-- Config Layer
-- Exception Layer
-- Utility Layer
+The backend should intelligently organize:
+- Controllers
+- Services
+- Repositories
+- DTOs
+- Entities
+- Security modules
+- Validation layers
+- Utility classes
+- Exception handlers
+- Configuration layers
+
+Architecture goals:
+- Separation of concerns
+- Scalability
+- Reusability
+- Maintainability
+- Clean business logic organization
 
 ---
 
-# Database Requirements
+# Data Processing & Validation Requirements
 
-Tables:
-- users
-- expenses
-- incomes
-- categories
+Securely sanitize and validate all incoming API requests.
 
-Requirements:
-- Foreign Keys
-- Relationships
-- Indexing
-- Constraints
-- Timestamps
-- Optimized Schema
+Implement:
+- DTO validation
+- Form validation
+- Request sanitization
+- Error boundaries
+- Centralized validation responses
+- Structured API error handling
 
-Relationships:
-- One User → Many Expenses
-- One User → Many Incomes
-- One User → Many Categories
+Handle:
+- Invalid authentication
+- API failures
+- Database exceptions
+- Timeout handling
+- Invalid requests
+- Network failures
+
+Avoid exposing production-sensitive stack traces.
 
 ---
 
 # API Requirements
 
-Create REST APIs for:
+Create secure REST APIs for:
 - Authentication
 - Expenses
 - Income
 - Categories
 - Dashboard Analytics
 
-Standards:
-- Proper HTTP Methods
-- Standard Status Codes
-- DTO-Based Communication
-- Validation Responses
-- Global Exception Handling
+API standards:
+- Proper HTTP methods
+- Standard status codes
+- DTO-based communication
+- Validation responses
+- Consistent JSON responses
+- Centralized exception handling
 
-Response Format:
+Example response structure:
 
 ```json
 {
@@ -309,71 +393,57 @@ Response Format:
 
 ---
 
-# Validation & Error Handling
+# Performance & Scalability
 
-Frontend:
-- Form Validation
-- Password Strength Validation
-- Email Validation
-- Required Field Validation
-
-Backend:
-- Bean Validation
-- Standardized Error Responses
-- Global Exception Handling
-
-Handle:
-- Authentication Errors
-- API Errors
-- Database Errors
-- Timeout Handling
-- Network Failures
-
----
-
-# Performance Optimization
+Optimize the system for smooth user experience and scalable workloads.
 
 Implement:
 - Lazy Loading
 - Pagination
 - Debounced Search
 - Memoization
-- Optimized API Calls
-- Efficient Rendering
 - Query Optimization
+- Optimized API Calls
+- Efficient State Management
+- Reduced Re-renders
+- Route-based Code Splitting
+
+Backend performance requirements:
+- Use asynchronous and non-blocking operations
+- Optimize database access
+- Reduce unnecessary queries
+- Use efficient request handling patterns
+
+Frontend performance requirements:
+- Minimize bundle size
+- Lazy-load heavy components
+- Optimize chart rendering
+- Improve Time to Interactive (TTI)
 
 ---
 
 # Logging & Testing
 
-Logging:
-- API Request Logs
-- Error Logs
-- Security Logs
+Implement:
+- API request logs
+- Authentication logs
+- Error logs
+- Security logs
 
 Use:
 - SLF4J
 - Logback
 
-Testing Setup:
+Testing setup should support:
 - JUnit
 - Mockito
-- Frontend Testing Structure
+- Frontend testing structure
 
 ---
 
-# Project Structure
+# Suggested Project Structure
 
 Use a clean, scalable, and enterprise-level project structure with separate frontend and backend applications.
-
-The exact internal structure should be designed intelligently according to:
-- Feature requirements
-- Scalability
-- Clean Architecture
-- Separation of Concerns
-- Reusability
-- Maintainability
-- Production-grade engineering standards
 
 Suggested high-level structure:
 
@@ -387,60 +457,52 @@ smart-expense-tracker/
 └── README.md
 ```
 
-The AI should automatically create and organize all required:
-- Components
-- Pages
-- APIs
-- Services
-- Configurations
-- DTOs
-- Entities
-- Security modules
-- Validations
-- Utilities
-- Hooks
-- Middleware
-- Docker files
-- Deployment files
-- Feature modules
+The internal architecture should be automatically organized according to:
+- Feature-based modular design
+- Clean Architecture
+- Separation of Concerns
+- Scalability
+- Reusability
+- Production engineering standards
 
-based on modern enterprise software architecture best practices.
 ---
 
-# Docker & Deployment
+# Docker & Deployment Requirements
 
 Generate:
 - Frontend Dockerfile
 - Backend Dockerfile
-- Docker Compose
-- Nginx Config
+- Docker Compose Configuration
+- Nginx Configuration
 - Production Build Setup
-- Environment Variables
+- Environment Variable Configuration
 
-Include:
+Deployment setup should include:
 - Docker Deployment
 - Vercel Deployment
 - Render/Railway Deployment
-- Production Optimization
+- Production optimization
+
+All runtime secrets, ports, API keys, database URLs, and JWT secrets must use environment variables.
 
 ---
 
-# README Requirements
+# README & Documentation
 
-Generate professional README documentation including:
-
+Generate professional GitHub-quality documentation including:
 - Project Overview
 - Features
-- Tech Stack
+- Technology Stack
 - Installation Guide
 - Frontend Setup
 - Backend Setup
 - Docker Setup
 - Environment Variables
 - API Documentation
-- Folder Structure
 - Deployment Guide
 - Troubleshooting
+
+Documentation should feel naturally written by experienced engineers and avoid robotic or repetitive wording.
 
 ---
 
@@ -452,23 +514,34 @@ Follow:
 - KISS Principle
 - Clean Architecture
 - Reusable Components
-- Scalable Modular Design
+- Modular Design
 - Professional Naming Conventions
+- Scalable Engineering Practices
+
+Code quality expectations:
+- Readable code
+- Maintainable structure
+- Optimized architecture
+- Consistent formatting
+- Reusable business logic
 
 ---
 
-# Important Instructions
+# Constraints & Guardrails
 
 IMPORTANT:
-- Generate COMPLETE WORKING CODE
-- Avoid pseudo-code and placeholders
+- Generate COMPLETE WORKING CODE only
+- Do not generate pseudo-code
+- Do not leave placeholder comments
+- Avoid incomplete implementations
 - Ensure frontend/backend integration works correctly
 - Ensure dependencies are complete
 - Ensure project runs without errors
-- Use production-grade best practices
-- Write code in a natural human-engineered style
+- Use secure coding practices
 - Avoid repetitive AI-style explanations
-- Keep documentation realistic like a real GitHub project
+- Keep implementations realistic and production-focused
+
+The final output must feel naturally engineered by a professional development team.
 
 ---
 
@@ -479,29 +552,29 @@ Generate output in this order:
 1. System Architecture
 2. Folder Structure
 3. Database Schema
-4. Backend Code
-5. Frontend Code
+4. Backend Source Code
+5. Frontend Source Code
 6. API Integration
 7. Docker Setup
 8. Deployment Setup
 9. Environment Variables
 10. README Documentation
-11. Build Commands
+11. Build & Run Commands
 12. Production Optimization Notes
 
 ---
 
 # Final Expectation
 
-The final application must:
-- Look like a premium fintech SaaS platform
+The final Smart Expense Tracker application must:
+- Look like a premium fintech SaaS product
 - Be secure, scalable, and responsive
-- Include analytics dashboards and charts
-- Include reusable architecture
-- Include full CRUD functionality
 - Include secure JWT authentication
-- Include Dockerized deployment
-- Follow real enterprise engineering standards
+- Include complete CRUD functionality
+- Include analytics dashboards and charts
+- Follow enterprise engineering standards
+- Support Dockerized deployment
+- Use reusable architecture
 - Run successfully without missing dependencies
 
 Generate the COMPLETE INDUSTRY-LEVEL SMART EXPENSE TRACKER APPLICATION with all source code, configurations, deployment setup, documentation, and premium UI/UX from start to finish.
