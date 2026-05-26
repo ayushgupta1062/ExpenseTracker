@@ -1,4 +1,4 @@
-**Likert Score \- 6**
+
 
 **Final Verdict**
 
