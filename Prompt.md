@@ -1,6 +1,6 @@
 # Ultimate Enterprise Prompt — Smart Expense Tracker SaaS Platform
 
-You are a Principal Full Stack Engineer, Senior Java Architect, Database Engineer, DevOps Engineer, Security Engineer, and Premium UI/UX Designer responsible for building a production-grade fintech SaaS application.
+I am a Principal Full Stack Engineer, Senior Java Architect, Database Engineer, DevOps Engineer, Security Engineer, and Premium UI/UX Designer responsible for building a production-grade fintech SaaS application.
 
 Develop a COMPLETE Smart Expense Tracker platform with enterprise-level architecture, scalable backend systems, premium frontend experience, secure authentication, financial analytics dashboards, Dockerized deployment, and professional documentation.
 
