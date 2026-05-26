@@ -364,49 +364,47 @@ Testing Setup:
 
 # Project Structure
 
-Generate this scalable structure:
+Use a clean, scalable, and enterprise-level project structure with separate frontend and backend applications.
+
+The exact internal structure should be designed intelligently according to:
+- Feature requirements
+- Scalability
+- Clean Architecture
+- Separation of Concerns
+- Reusability
+- Maintainability
+- Production-grade engineering standards
+
+Suggested high-level structure:
 
 ```text
 smart-expense-tracker/
 │
 ├── frontend/
-│   ├── src/
-│   │   ├── api/
-│   │   ├── assets/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── layouts/
-│   │   ├── routes/
-│   │   ├── hooks/
-│   │   ├── context/
-│   │   ├── services/
-│   │   ├── utils/
-│   │   ├── validations/
-│   │   └── constants/
-│   ├── Dockerfile
-│   └── .env
-│
 ├── backend/
-│   ├── src/main/java/com/expensetracker/
-│   │   ├── controller/
-│   │   ├── service/
-│   │   ├── repository/
-│   │   ├── entity/
-│   │   ├── dto/
-│   │   ├── mapper/
-│   │   ├── security/
-│   │   ├── config/
-│   │   ├── validation/
-│   │   ├── exception/
-│   │   └── util/
-│   ├── Dockerfile
-│   └── .env
-│
 ├── docker-compose.yml
-├── README.md
-└── deployment/
+├── .gitignore
+└── README.md
 ```
 
+The AI should automatically create and organize all required:
+- Components
+- Pages
+- APIs
+- Services
+- Configurations
+- DTOs
+- Entities
+- Security modules
+- Validations
+- Utilities
+- Hooks
+- Middleware
+- Docker files
+- Deployment files
+- Feature modules
+
+based on modern enterprise software architecture best practices.
 ---
 
 # Docker & Deployment
